@@ -28,7 +28,7 @@ export default function Footer(props) {
         mb={{ base: "20px", xl: "0px" }}
       >
         &copy; {1900 + new Date().getYear()},{" "}
-        <Text as="span">Made with ❤️ for a better web</Text>
+        <Text as="span">Made with ❤️ for a better web1</Text>
       </Text>
       {/* <List display="flex">
         <ListItem
