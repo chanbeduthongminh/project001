@@ -37,20 +37,18 @@ function SignIn() {
       .then((response) => {
         const data = response.data;
         if (data.status === 1) {
-          // alert(response.data.message);
           // lưu item token vào localstorage để dùng
           localStorage.setItem("token", data.token.accessToken);
           localStorage.setItem("username", username);
 
           setSuccess(true);
-          // alert(response.data.message);
         } else {
           alert(response.data.message);
         }
       })
       .catch((error) => {
         console.error(error);
-        alert("An error occurred while signing in");
+        // alert("An error occurred while signing in");
       });
   };
   if (success) {
