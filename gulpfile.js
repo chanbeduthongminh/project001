@@ -9,10 +9,10 @@ gulp.task("licenses", async function () {
     .pipe(gulp.dest("./", { overwrite: true }));
 
   // this is to add Creative Tim licenses in the production mode for the minified html
-  gulp
-    .src("build/index.html", { base: "./" })
-    .pipe(gap.prependText(`hi`))
-    .pipe(gulp.dest("./", { overwrite: true }));
+  // gulp
+  //   .src("build/index.html", { base: "./" })
+  //   .pipe(gap.prependText(`hi`))
+  //   .pipe(gulp.dest("./", { overwrite: true }));
 
   // this is to add Creative Tim licenses in the production mode for the minified css
   gulp
